@@ -30,6 +30,7 @@
 
 .main
 	position: relative
+	z-index: 1	
 
 .header
 	position: fixed
@@ -47,7 +48,7 @@
 
 
 	&-menu
-		background-color: rgba(0, 0, 0, .8)
+		background-color: rgba(0, 0, 0, .9)
 		padding: 5px 0
 
 	&__container
@@ -61,7 +62,8 @@
 	ul
 		display: flex
 		flex-direction: row
-		justify-content: space-between
+		justify-content: flex-start
+		flex-wrap: wrap
 
 	li
 		margin-right: 15px
@@ -181,7 +183,8 @@
 					content: ''
 					width: 210px	
 					height: 1px
-					left: 41%
+					left: 50%
+					transform: translate(-50%, 0)
 					background-color: #f40404	
 					bottom: -10px	
 			p
@@ -209,17 +212,19 @@
 
 .good-know
 	padding-bottom: 60px
+
 	.container
-		
 		border-bottom: 1px solid #e6e6e6
+
 	.wrapper
 		padding: 20px
 		width: 70%
 		margin-bottom: 50px	
-
 		margin-left: 15%
 		background-color: #f7f7f7
-		background: url("../img/good-know-bg.png") no-repeat center
+		background: url("../img/good-know-bg.png") no-repeat center 
+		background-size: cover
+
 		h3
 			color: #031933
 			font-size: 21px
@@ -239,22 +244,23 @@
 		.wrap
 			display: flex
 			flex-direction: row
-			flex-wrap: wrap		
-			.list
-				align-items: center
-				justify-content: center
-				display: flex
-				flex-direction: row
-				width: 25%
-				margin-bottom: 15px
-				img
-					width: 20px
-					height: 20px
-					margin-right: 10px
-				p
-					color: #031933
-					font-size: 14px
-					font-weight: 300		
+			flex-wrap: wrap
+
+		.list
+			align-items: center
+			justify-content: center
+			display: flex
+			flex-direction: row
+			width: 25%
+			margin-bottom: 15px
+			img
+				width: 20px
+				height: 20px
+				margin-right: 10px
+			p
+				color: #031933
+				font-size: 14px
+				font-weight: 300		
 
 
 .services-news
@@ -277,14 +283,25 @@
 			height: 1px
 			width: 50px
 			background-color: #f00	
-		strong
-			color: #031933
-			font-size: 16px
-			font-weight: 500
+		a
+			&:hover
+				strong
+					text-decoration: underline
+			&:focus
+				strong
+					text-decoration: underline
+
+			strong
+				color: #031933
+				font-size: 16px
+				font-weight: 500
+				display: block
+
 		time
 			color: #aeaeae
 			font-size: 14px
 			font-weight: 300
+			display: block
 	.navigation
 		display: flex
 		width: 100%
@@ -302,6 +319,7 @@
 				
 .second-know
 	padding-top: 40px
+
 	.container
 		border-bottom: none
 	.top-line
@@ -331,6 +349,22 @@
 			top: 8px
 			border-radius: 50%
 
+
+.wrapper
+	&__col
+		width: 50%
+
+	&__row
+		display: flex
+		justify-content: space-between
+
+		.wrap .list
+			width: 50%
+
+		.top-line
+			p
+				width: 100%
+
 .footer	
 	padding-bottom: 20px
 
@@ -344,11 +378,6 @@
 		align-items: center
 	
 	.nav
-		ul
-			display: flex
-			flex-direction: row
-			justify-content: space-between
-
 		li
 			margin-right: 15px
 			&:last-child

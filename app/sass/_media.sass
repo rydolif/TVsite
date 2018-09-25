@@ -1,16 +1,66 @@
 
 @media only screen and (max-width : 1200px)
 
-	.header
+	.good-know .wrapper .wrap .list
+		padding-left: 30px
+
+	.action__profit__left
+		width: 100%
+		margin-bottom: 30px
+
+	.action__profit__right
+		width: 100%
+
+	.action__profit
+		flex-direction: column
 
 
 @media only screen and (max-width : 992px)
-	#thanks
-		padding: 40px
+	h1
+		font-size: 50px
 
-	.modal
-		width: 320px
-		padding: 40px
+	h2
+		br
+			display: none
+
+	.hero
+		background-position: center left
+
+	.good-know .wrapper
+		width: 100%
+		margin-left: 0
+
+	.setting-list
+		flex-wrap: wrap
+		&__wrap
+			width: 48%
+			margin-bottom: 30px
+			&:last-child
+				margin-bottom: 0
+
+	.second-setting
+		margin-bottom: 0
+
+	.second-setting p
+		font-size: 18px
+
+
+	.price .list-wrap__row
+		width: 90%
+
+
+@media only screen and (max-width : 767px)
+	
+	.price .list-wrap__row p
+		width: 22%
+	.s
+		display: none
+
+	h1
+		font-size: 40px
+
+	.hero
+		padding: 150px 0 70px
 
 	.nav
 		position: fixed
@@ -19,7 +69,7 @@
 		height: 100%
 		flex-direction: column
 		right: -100%
-		top: 80px
+		top: 65px
 		z-index: -1
 		background: rgba(0, 0, 0, .9)
 		transition: all .3s
@@ -28,8 +78,7 @@
 			display: flex
 			flex-direction: column
 			justify-content: center
-			margin-top: 40px
-			margin-left: 40px
+			margin: 40px
 
 		li
 			margin: 0
@@ -62,6 +111,13 @@
 				&::before
 					transform: scale(1)
 
+		&-active
+			right: 0
+
+	.footer
+		.nav
+			display: none
+
 	.hamburger
 		display: block
 		z-index: 1001
@@ -70,18 +126,129 @@
 	.hamburger-box
 		right: 0
 
+	.second-know .list:before
+		left: 10px
 
+	.good-know .wrapper .wrap .list img
+		margin-right: 4px
 
-@media only screen and (max-width : 767px)
-	.header
+	.wrapper
+		&__row
+			flex-wrap: wrap
+		&__col
+			width: 100%
+			margin-bottom: 30px
+			&:last-child
+				margin-bottom: 0
+
+	.good-know .wrapper .wrap .list
+		width: 50%
+		padding-left: 0
+
+	.content-line
+		br
+			display: none
+
+	.price h2 a
+		font-size: 24px
+
+	.services-news h3
+		font-size: 24px
+		margin-bottom: 40px
+
+	.footer__logo
+		margin: 0 auto
+
+	.footer .copyright p
+		text-align: center
+
+	.good-know
+		.wrapper
+			margin-bottom: 0
+			
+		.container
+			border: none
+
+	.card
+		.regim
+			flex-direction: column
+			&-list
+				margin-bottom: 20px
 
 @media only screen and (max-width : 576px)
-	.header
+	h1
+		font-size: 34px
+
+	.hero
+		p
+			font-size: 18px
+		strong
+			font-size: 24px
+
+	.services-news .news-list
+		margin-bottom: 35px
+
+	.good-know .wrapper .list
+		justify-content: flex-start
+
+	.good-know .wrapper .wrapper__col .list
+		padding-left: 30px
+	
+	.card h2
+		font-size: 24px
+		margin-bottom: 25px
+		display: inline-block
+		span
+			font-size: 24px
+			display: inline
+			margin-bottom: 0
+			margin-left: 0
+	
+	.good-know
+		padding-bottom: 40px
 
 @media only screen and (max-width : 480px)
-	.header
+	h1
+		font-size: 28px
 
+	.price .buy-section li
+		padding: 15px 0
 
+	.price .list-wrap__row p
+		width: 20%
+
+	.price .buy-section li p
+		font-size: 14px
+
+	.price .buy-btn
+		font-size: 10px
+		padding: 0 10px
+
+	.price .content-line
+		display: flex
+		flex-direction: column
+
+		span
+			margin: 0
+			br
+				display: none
+	.good-know .wrapper .wrapper__col .list
+		width: 100%
+		
+
+	.action__profit__left ul
+		flex-direction: column
+		li
+			width: 100%
+
+	.action__profit__right ul
+		flex-direction: column
+		li
+			width: 100%
+
+	.setting-list
+		&__wrap
+			width: 100%
 
 
 
