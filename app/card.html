@@ -69,65 +69,61 @@
 		</section>
 
 
-	<section class="card">
-		<div class="container">
-			<h2> шаринг на<span> Golden Interstar</span></h2>
-			<span>Для пользования данной услугой нам понадобится в первую очередь перепрошить свой ресивер программным обеспечением, поддерживающим режим кардшаринга, так как не всё современное ПО для линейки Golden Interstar обладает этими возможностями.</span>
-			<p>Найти последнее ПО с поддержкой кардшаринга для своей модели ресивера можно здесь <a href="https://gomel-sat.bz/index.php?do=files&op=cat&id=70">Программное обеспечение.</a></p>
+		<section class="card wow bounceInUp" data-wow-duration="1.5s">
+			<div class="container">
+				<h2> шаринг на<span> Golden Interstar</span></h2>
+				<span>Для пользования данной услугой нам понадобится в первую очередь перепрошить свой ресивер программным обеспечением, поддерживающим режим кардшаринга, так как не всё современное ПО для линейки Golden Interstar обладает этими возможностями.</span>
+				<p>Найти последнее ПО с поддержкой кардшаринга для своей модели ресивера можно здесь <a href="https://gomel-sat.bz/index.php?do=files&op=cat&id=70">Программное обеспечение.</a></p>
 
-			<p class="last-text">Необходимо будет активировать данную возможность через меню ресивера. После перепрошивки данным софтом в главном меню добавится пункт - Смарт карта (если у вас был FTA ресивер).Там будет присутствовать пункт Card Share. Здесь необходимо будет прописать следующее:</p>
+				<p class="last-text">Необходимо будет активировать данную возможность через меню ресивера. После перепрошивки данным софтом в главном меню добавится пункт - Смарт карта (если у вас был FTA ресивер).Там будет присутствовать пункт Card Share. Здесь необходимо будет прописать следующее:</p>
 
 
 
-			<div class="regim">
-				<div class="regim-list">
-					<span>Card Share </span>
-					<p>On</p>
+				<div class="regim">
+					<div class="regim-list">
+						<span>Card Share </span>
+						<p>On</p>
+					</div>
+
+					<div class="regim-list">
+						<span>Режим</span>
+						<p>Client</p>
+					</div>
+
+					<div class="regim-list">
+						<span>Client</span>
+						<p>1</p>
+					</div>
+
+
 				</div>
 
-				<div class="regim-list">
-					<span>Режим</span>
-					<p>Client</p>
+				<span>Для связи тюнера с интернетом нам понадобится программа mpcs_ide . Данная программа будет связываться через интернет или по локальной сети с сервером, получать ключи и отсылать их в ваш приемник.</span>
+				<p>Настроить её довольно просто.</p>
+				<p class="last-text">Предположим, что вам дали строку инициализации кардшаринга для всеми любимого провайдера - НТВ+ по протоколу Newcamd 525 (наиболее распространён). Строка, которую вам дали, будет выглядеть примерно так:</p>
+
+				<div class="regim">
+					<span>CWS = cservX.net 10000 login password 01 02 03 04 05 06 07 08 09 10 11 12 13 14</span>
+
+
 				</div>
 
-				<div class="regim-list">
-					<span>Client</span>
-					<p>1</p>
+
+				<div class="list-revieus">
+					<p>Где - cservX.net - имя, либо IP адрес сервера;</p>
+					<ul>
+						<li><span>10000</span> - порт, через который пойдёт шара НТВ+;</li>
+						<li><span>login</span> - логин;</li>
+						<li><span>password</span> - пароль;</li>
+						<li><span>01 02 03 04 05 06 07 08 09 10 11 12 13 14</span> - ключ шифрования патока.</li>
+					</ul>
 				</div>
 
 
 			</div>
+		</section>
 
-			<span>Для связи тюнера с интернетом нам понадобится программа mpcs_ide . Данная программа будет связываться через интернет или по локальной сети с сервером, получать ключи и отсылать их в ваш приемник.</span>
-			<p>Настроить её довольно просто.</p>
-			<p class="last-text">Предположим, что вам дали строку инициализации кардшаринга для всеми любимого провайдера - НТВ+ по протоколу Newcamd 525 (наиболее распространён). Строка, которую вам дали, будет выглядеть примерно так:</p>
-
-			<div class="regim">
-				<span>CWS = cservX.net 10000 login password 01 02 03 04 05 06 07 08 09 10 11 12 13 14</span>
-
-
-			</div>
-
-
-			<div class="list-revieus">
-				<p>Где - cservX.net - имя, либо IP адрес сервера;</p>
-				<ul>
-					<li><span>10000</span> - порт, через который пойдёт шара НТВ+;</li>
-					<li><span>login</span> - логин;</li>
-					<li><span>password</span> - пароль;</li>
-					<li><span>01 02 03 04 05 06 07 08 09 10 11 12 13 14</span> - ключ шифрования патока.</li>
-				</ul>
-			</div>
-
-
-		</div>
-	</section>
-	
-
-	
-
-
-		<section class="good-know">
+		<section class="good-know wow bounceInUp" data-wow-duration="1.5s">
 			<div class="container">
 				<div class="wrapper">
 				<h3>полезно знать, что мы принимаем к оплате</h3>
@@ -201,9 +197,7 @@
 			</div>
 		</section>
 
-
-
-		<section class="setting">
+		<section class="setting wow bounceInUp" data-wow-duration="1.5s">
 			<div class="container">
 				<p>Имея эти данные, открываете <span>mpcs_GI_client</span> и с помощью программы<span> Total Commander</span> по кнопке  F4  начинаем редактировать файлы:</p>
 
@@ -283,19 +277,7 @@
 			</div>
 		</section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-		<section class="setting second-setting">
+		<section class="setting second-setting wow bounceInUp" data-wow-duration="1.5s">
 			<div class="container">
 				<p>Рассмотрим подключение 2 пакетов с одного сервера, например - НТВ+ россия (36e) и Polsat (13e)</p>
 
@@ -375,8 +357,7 @@
 			</div>
 		</section>
 
-
-			<section class="good-know second-know">
+		<section class="good-know second-know wow bounceInUp" data-wow-duration="1.5s">
 			<div class="container">
 				<div class="wrapper">
 				<h3>полезно знать</h3>
@@ -458,8 +439,7 @@
 			</div>
 		</section>
 
-
-		<section class="about-cardshering">
+		<section class="about-cardshering wow bounceInUp" data-wow-duration="1.5s">
 			<div class="container">
 				<p><span>Так же будет налиживаться ограничение на одновременный просмотр НТВ+ рос в паре с НТВ+ укр.</span> Их можно будет смотреть, но раздельно с 2 программ MPCS. Если их запускать вместе с 1 программы то будет работать только НТВ+ укр ввиду того что его ID 040600 идет первым в потоке со спутника.
 Чтобы изучить настройки данной программы более детально, не забудьте прочитать<span> readme.txt,</span> имеющийся внутри архива.<br>
@@ -472,9 +452,7 @@
 			</div>
 		</section>
 
-
-
-			<section class="about-cardshering">
+		<section class="about-cardshering wow bounceInUp" data-wow-duration="1.5s">
 			<div class="container">
 				<h3>Что такое кардшаринг ?</h3>
 				<p><span>Кардшаринг</span> - ничто иное, как раздача другим пользователям DW ключей с официальной карты через Интернет либо локальную сеть. В качестве сервера, раздающего ключи на определённый пакет, может служить <span>Dreambox</span> - спутниковый ресивер на базе операционной системы линукс, компьютер с подключенным к нему программатором и соответствующим программным обеспечением и некоторые другие. Каждые 10 сек. происходит считывание DW ключей с карты, эти ключи направляются всем пользователям, подключенным к данному серверу (естественно не бесплатно). Ввиду того, что смена ключа происходит каждые 10 секунд, для пользования данной услугой необходимо иметь Интернет-соединение с помегабайтной тарификацией.</p>
@@ -487,12 +465,6 @@
 
 			</div>
 		</section>
-
-
-
-
-
-
 
 	</main>
 
