@@ -35,8 +35,6 @@
 		&__wrap
 			width: 48%
 			margin-bottom: 30px
-			&:last-child
-				margin-bottom: 0
 
 	.second-setting
 		margin-bottom: 0
@@ -51,6 +49,18 @@
 
 @media only screen and (max-width : 767px)
 	
+	.block
+		flex-direction: column
+		&-text
+			width: 100%
+			margin-right: 0
+
+		&-img
+			width: 100%
+			img
+				width: 100%
+				height: auto
+
 	.price .list-wrap__row p
 		width: 22%
 	.s
@@ -73,8 +83,17 @@
 		z-index: -1
 		background: rgba(0, 0, 0, .9)
 		transition: all .3s
+		overflow: auto
 
-		ul
+		.sub-menu
+			position: relative
+			display: block
+			left: 20px
+			top: 10px
+			background: transparent
+
+
+		.list
 			display: flex
 			flex-direction: column
 			justify-content: center
@@ -249,6 +268,9 @@
 	.setting-list
 		&__wrap
 			width: 100%
+
+	.price .buy-section li a
+		font-size: 10px
 
 
 

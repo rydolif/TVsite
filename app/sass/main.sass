@@ -2,6 +2,10 @@
 @import "base"
 @import "page"
 
+
+.wow, p, img, div
+	animation-duration: 2.6s
+
 .s
 	position: absolute
 	z-index: -1
@@ -59,7 +63,7 @@
 		align-items: center
 	
 .nav
-	ul
+	.list
 		display: flex
 		flex-direction: row
 		justify-content: flex-start
@@ -67,8 +71,13 @@
 
 	li
 		margin-right: 15px
+		position: relative
+		&:hover
+			.sub-menu
+				display: block
 		&:last-child
 			margin-right: 0
+
 		a
 			color: #fff
 			position: relative
@@ -101,6 +110,34 @@
 				text-decoration: none
 				&::before
 					transform: scale(1)
+
+.menu-item-has-children
+	position: relative
+	padding-right: 15px
+	&:hover
+		&::before
+			color: #f40404
+	&::before
+		content: "\f107"
+		position: absolute
+		right: 0
+		font-size: 15px
+		font-weight: 700
+		font-family: $fontawesome
+
+
+.sub-menu
+	display: none
+	position: absolute
+	top: 20px
+	right: 0
+	width: 200px
+	padding: 15px
+	background: rgba(0, 0, 0, 0.9)
+
+	li
+		margin-bottom: 5px
+
 
 .hero
 	background: url("../img/hero.jpg") no-repeat center top / cover 
@@ -282,41 +319,43 @@
 			top: -10px
 			height: 1px
 			width: 50px
-			background-color: #f00	
-		a
-			&:hover
-				strong
-					text-decoration: underline
-			&:focus
-				strong
-					text-decoration: underline
+			background-color: #f00
 
-			strong
-				color: #031933
-				font-size: 16px
-				font-weight: 500
-				display: block
+	p
+		color: #031933
+		font-size: 14px
 
-		time
-			color: #aeaeae
-			font-size: 14px
-			font-weight: 300
-			display: block
-	.navigation
-		display: flex
-		width: 100%
-		justify-content: center
-		align-items: center		
-		a
-			color: #666
-			font-size: 15px
-			font-weight: 300
-			width: 10px
-		span
-			color: #031933
-			font-size: 16px	
-			font-weight: 400
+	strong
+		color: #031933
+		font-size: 16px
+		font-weight: 500
+		display: block
+		margin-bottom: 10px
+
+	time
+		color: #aeaeae
+		font-size: 14px
+		font-weight: 300
+		display: block
+
+.navigation
+	display: flex
+	width: 100%
+	justify-content: center
+	align-items: center
+	a
+		color: #666
+		font-size: 15px
+		font-weight: 300
+		width: 10px
+		margin: 0 5px
+	span
+		color: #031933
+		font-size: 16px
+		font-weight: 400
+		margin: 0 5px
 				
+
 .second-know
 	padding-top: 40px
 
@@ -368,6 +407,10 @@
 .footer	
 	padding-bottom: 20px
 
+	.menu-item-has-children
+		&::before
+			display: none
+
 	&__container
 		border-top: 1px solid #e6e6e6
 		padding-top: 20px
@@ -380,6 +423,9 @@
 	.nav
 		li
 			margin-right: 15px
+			&:hover
+				.sub-menu
+					display: none
 			&:last-child
 				margin-right: 0
 			a
